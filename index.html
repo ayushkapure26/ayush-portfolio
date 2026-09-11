@@ -3,185 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ayush Kapure — Computer Engineering student and Android developer building practical apps." />
-  <title>Ayush Kapure | Developer Portfolio</title>
+  <meta name="description" content="Ayush Kapure — Computer Engineering student and Android developer portfolio." />
+  <title>Ayush Kapure — Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="cursor-glow"></div>
-  <div class="noise"></div>
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <p>AYUSH KAPURE</p>
+      <div class="loader-line"><span></span></div>
+      <div class="loader-bottom"><span>PORTFOLIO</span><span id="loadCount">00</span></div>
+    </div>
+  </div>
 
-  <header class="nav-wrap">
-    <nav class="nav container">
-      <a class="brand" href="#home">AYUSH<span>.</span></a>
-      <button class="menu-btn" aria-label="Toggle menu">☰</button>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </div>
+  <div class="cursor-glow"></div>
+  <div class="grid-bg"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#home">AK<span>↗</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <a class="tiny-link" href="https://github.com/ayushkapure26" target="_blank">GitHub ↗</a>
   </header>
 
   <main>
-    <section id="home" class="hero container">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">COMPUTER ENGINEERING • ANDROID • PROBLEM SOLVING</p>
-        <h1>I build useful<br><span>digital products.</span></h1>
-        <p class="hero-text">
-          Hi, I'm <strong>Ayush Kapure</strong> — a Computer Engineering student focused on Android development,
-          practical app ideas, clean UI, and learning by building real projects.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">View My Work ↗</a>
-          <a href="https://github.com/ayushkapure26" target="_blank" class="btn ghost">GitHub</a>
-        </div>
-        <div class="hero-stats">
-          <div><strong>03+</strong><span>Featured projects</span></div>
-          <div><strong>B.Tech</strong><span>Computer Engineering</span></div>
-          <div><strong>2026</strong><span>Final-year student</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="profile-card">
-          <div class="profile-top">
-            <span class="status-dot"></span>
-            <span>Available for opportunities</span>
+    <section id="home" class="hero section-shell">
+      <div class="hero-kicker reveal">FINAL-YEAR COMPUTER ENGINEERING STUDENT</div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-line reveal"><span>ANDROID</span></div>
+          <div class="hero-line outline reveal"><span>DEVELOPER</span></div>
+          <p class="hero-description reveal">I design and build practical digital products with a focus on Android, clean interfaces and real-world utility.</p>
+          <div class="hero-actions reveal">
+            <a href="#projects" class="pill primary">Explore work ↗</a>
+            <a href="mailto:ayushkapure26@gmail.com" class="pill">Say hello</a>
           </div>
-          <div class="avatar-wrap">
+        </div>
+
+        <div class="portrait-stage reveal">
+          <div class="photo-card">
+            <div class="photo-tape"></div>
             <img src="https://avatars.githubusercontent.com/u/113749854?v=4" alt="Ayush Kapure" />
+            <div class="photo-caption">
+              <span>AYUSH KAPURE</span>
+              <small>India • 2026</small>
+            </div>
           </div>
-          <div class="profile-info">
-            <p>Developer / Student</p>
-            <h2>Ayush Kapure</h2>
-            <span>India 🇮🇳</span>
+          <div class="orbit-tag one">BUILD</div>
+          <div class="orbit-tag two">LEARN</div>
+        </div>
+      </div>
+      <div class="scroll-note">SCROLL TO DISCOVER ↓</div>
+    </section>
+
+    <section id="about" class="section-shell section-block">
+      <div class="section-index reveal">01 / ABOUT</div>
+      <div class="split">
+        <h2 class="display-title reveal">I turn <span>everyday problems</span> into working software.</h2>
+        <div class="body-copy reveal">
+          <p>I'm Ayush Kapure, a Computer Engineering student focused on Android development and project-based learning.</p>
+          <p>My current work explores practical CNG and vehicle-use cases, local data, clean UI, debugging, testing and GitHub-based workflows.</p>
+          <div class="mini-stats">
+            <div><b>B.Tech</b><span>Computer Engineering</span></div>
+            <div><b>Android</b><span>Primary focus</span></div>
+            <div><b>2026</b><span>Final year</span></div>
           </div>
-          <div class="code-chip">&lt; build. learn. improve. /&gt;</div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section container">
-      <div class="section-label reveal">01 / ABOUT</div>
-      <div class="about-grid">
-        <h2 class="section-title reveal">Turning everyday problems into <span>working software.</span></h2>
-        <div class="about-copy reveal">
-          <p>
-            I enjoy building applications that solve practical problems, especially in Android and utility-focused products.
-            My current work includes fuel tracking, CNG refill management, booking workflows, and user-friendly mobile interfaces.
-          </p>
-          <p>
-            I learn best by shipping projects — from UI design and local data storage to debugging, testing, GitHub workflows,
-            and documentation.
-          </p>
+    <section id="projects" class="section-shell section-block">
+      <div class="section-index reveal">02 / SELECTED WORK</div>
+      <div class="project-stack">
+        <article class="project-panel featured reveal">
+          <div class="project-no">01</div>
+          <div class="project-content">
+            <p class="project-type">ANDROID • FUEL UTILITY</p>
+            <h3>CNG मित्र</h3>
+            <p>A practical fuel diary for CNG drivers with vehicle and refill records, mileage and expense reporting, offline Guest Mode and CSV import/export.</p>
+            <div class="tag-row"><span>Kotlin</span><span>Jetpack Compose</span><span>Room</span><span>Coroutines</span></div>
+            <a href="https://github.com/ayushkapure26/Ayush_prmm" target="_blank">View project ↗</a>
+          </div>
+          <div class="project-mark">CNG<br>MITRA</div>
+        </article>
+
+        <article class="project-panel reveal">
+          <div class="project-no">02</div>
+          <div class="project-content">
+            <p class="project-type">WEB • PERSONAL BRAND</p>
+            <h3>Developer Portfolio</h3>
+            <p>This animated portfolio is designed around a dark editorial grid, bold typography, layered cards and motion-led storytelling.</p>
+            <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://github.com/ayushkapure26/ayush-portfolio" target="_blank">Source ↗</a>
+          </div>
+          <div class="project-mark">AK<br>2026</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section-shell section-block">
+      <div class="section-index reveal">03 / TOOLKIT</div>
+      <h2 class="display-title reveal">What I use to <span>build.</span></h2>
+      <div class="skill-marquee reveal">
+        <div class="marquee-track">
+          <span>KOTLIN ✦ JETPACK COMPOSE ✦ ROOM ✦ COROUTINES ✦ JAVA ✦ PYTHON ✦ HTML ✦ CSS ✦ JAVASCRIPT ✦ GIT ✦ GITHUB ✦ FIREBASE ✦ GOOGLE MAPS ✦ GEMINI ✦</span>
+          <span>KOTLIN ✦ JETPACK COMPOSE ✦ ROOM ✦ COROUTINES ✦ JAVA ✦ PYTHON ✦ HTML ✦ CSS ✦ JAVASCRIPT ✦ GIT ✦ GITHUB ✦ FIREBASE ✦ GOOGLE MAPS ✦ GEMINI ✦</span>
         </div>
       </div>
-    </section>
-
-    <section id="skills" class="section container">
-      <div class="section-label reveal">02 / SKILLS</div>
-      <h2 class="section-title reveal">My current <span>toolkit.</span></h2>
-      <div class="skill-grid">
-        <article class="skill-card reveal"><span>01</span><h3>Android</h3><p>Kotlin, Jetpack Compose, Room, Coroutines</p></article>
-        <article class="skill-card reveal"><span>02</span><h3>Programming</h3><p>Java, Python, C, C++, JavaScript</p></article>
-        <article class="skill-card reveal"><span>03</span><h3>Web</h3><p>HTML5, CSS3, JavaScript, responsive UI</p></article>
-        <article class="skill-card reveal"><span>04</span><h3>Data & Tools</h3><p>MySQL, MongoDB, Git, GitHub Actions</p></article>
-        <article class="skill-card reveal"><span>05</span><h3>Integrations</h3><p>Firebase, Google Maps, Gemini</p></article>
-        <article class="skill-card reveal"><span>06</span><h3>Learning</h3><p>Testing, debugging, UI/UX, software workflows</p></article>
+      <div class="skill-cards">
+        <article class="reveal"><small>01</small><h3>Android</h3><p>Kotlin, Jetpack Compose, Room, Coroutines</p></article>
+        <article class="reveal"><small>02</small><h3>Programming</h3><p>Java, Python, C, C++, JavaScript</p></article>
+        <article class="reveal"><small>03</small><h3>Tools</h3><p>Git, GitHub Actions, Firebase, Google Maps, Gemini</p></article>
       </div>
     </section>
 
-    <section id="projects" class="section container">
-      <div class="section-label reveal">03 / PROJECTS</div>
-      <div class="projects-head">
-        <h2 class="section-title reveal">Selected <span>work.</span></h2>
-        <a href="https://github.com/ayushkapure26?tab=repositories" target="_blank" class="text-link reveal">All repositories ↗</a>
-      </div>
-
-      <div class="project-list">
-        <article class="project-card featured reveal">
-          <div class="project-meta"><span>FEATURED</span><span>ANDROID</span></div>
-          <h3>CNG मित्र</h3>
-          <p>
-            A practical CNG fuel diary designed for drivers to track refills, mileage, expenses and vehicle data,
-            with offline-friendly workflows and CSV import/export.
-          </p>
-          <div class="tags"><span>Kotlin</span><span>Jetpack Compose</span><span>Room</span><span>Firebase</span></div>
-          <div class="project-links">
-            <a href="https://github.com/ayushkapure26/Ayush_prmm" target="_blank">Source Code ↗</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-meta"><span>WEB APP</span><span>CNG</span></div>
-          <h3>CNG Booking System</h3>
-          <p>A web-based booking concept for simplifying CNG-related customer workflows with a clean, usable interface.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <div class="project-links">
-            <a href="https://github.com/ayushkapure26/ayushkapure80" target="_blank">View Repository ↗</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-meta"><span>UTILITY</span><span>TRACKING</span></div>
-          <h3>Refill Manager</h3>
-          <p>A refill and fuel management project focused on tracking usage, records and practical vehicle expenses.</p>
-          <div class="tags"><span>App Design</span><span>Fuel Tracking</span><span>Data</span></div>
-          <div class="project-links">
-            <a href="https://github.com/ayushkapure26/Refill_-Manager" target="_blank">Repository ↗</a>
-          </div>
-        </article>
+    <section class="section-shell section-block">
+      <div class="section-index reveal">04 / EDUCATION</div>
+      <div class="education-list">
+        <div class="edu-row reveal"><span>PRESENT</span><h3>B.Tech — Computer Engineering</h3><p>Final-year student</p></div>
+        <div class="edu-row reveal"><span>COMPLETED</span><h3>Diploma — Computer Technology</h3><p>Programming & computer fundamentals</p></div>
+        <div class="edu-row reveal"><span>2024</span><h3>Accenture Developer & Technology Job Simulation</h3><a target="_blank" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ovyvuqqNRQKBjNxbj/3xnZEj9kfpoQKW885_ovyvuqqNRQKBjNxbj_HwoRRiW2e4CwZcYFw_1732420745841_completion_certificate.pdf">Certificate ↗</a></div>
       </div>
     </section>
 
-    <section id="education" class="section container">
-      <div class="section-label reveal">04 / EDUCATION & CERTIFICATE</div>
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <span class="year">Present</span>
-          <div><h3>B.Tech — Computer Engineering</h3><p>Final-year student • Building projects alongside academics and GATE preparation.</p></div>
-        </article>
-        <article class="timeline-item reveal">
-          <span class="year">Completed</span>
-          <div><h3>Diploma — Computer Technology</h3><p>Foundation in programming, software concepts and computer technology.</p></div>
-        </article>
-        <article class="timeline-item reveal">
-          <span class="year">2024</span>
-          <div>
-            <h3>Accenture Developer & Technology Job Simulation</h3>
-            <p>Forage certificate covering software development, testing, Agile/Waterfall, algorithms and debugging.</p>
-            <a class="text-link" target="_blank" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ovyvuqqNRQKBjNxbj/3xnZEj9kfpoQKW885_ovyvuqqNRQKBjNxbj_HwoRRiW2e4CwZcYFw_1732420745841_completion_certificate.pdf">View certificate ↗</a>
-          </div>
-        </article>
+    <section id="contact" class="contact-section section-shell">
+      <p class="section-index reveal">05 / CONTACT</p>
+      <div class="contact-big reveal">
+        <p>HAVE AN IDEA?</p>
+        <h2>LET'S <span>BUILD</span><br>SOMETHING.</h2>
       </div>
-    </section>
-
-    <section id="contact" class="section container contact">
-      <div class="contact-card reveal">
-        <p class="eyebrow">LET'S CONNECT</p>
-        <h2>Have an idea, opportunity<br>or collaboration?</h2>
-        <p>I'm open to internships, entry-level roles, project collaboration and developer opportunities.</p>
-        <div class="contact-actions">
-          <a class="btn primary" href="mailto:ayushkapure26@gmail.com">Email Me ↗</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/ayush-kapure-19152a281/" target="_blank">LinkedIn</a>
-        </div>
+      <div class="contact-bottom reveal">
+        <a href="mailto:ayushkapure26@gmail.com">ayushkapure26@gmail.com ↗</a>
+        <a href="https://www.linkedin.com/in/ayush-kapure-19152a281/" target="_blank">LinkedIn ↗</a>
+        <a href="https://github.com/ayushkapure26" target="_blank">GitHub ↗</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Ayush Kapure</span>
-      <span>Built with HTML • CSS • JavaScript</span>
-    </div>
-  </footer>
-
+  <footer class="section-shell"><span>© <span id="year"></span> AYUSH KAPURE</span><span>DESIGNED & BUILT WITH CODE</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
