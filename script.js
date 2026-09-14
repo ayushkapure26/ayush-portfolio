@@ -1,1 +1,45 @@
-const canvas=document.getElementById('space');const ctx=canvas.getContext('2d');let w,h,dpr,points=[];function resize(){dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;canvas.width=w*dpr;canvas.height=h*dpr;canvas.style.width=w+'px';canvas.style.height=h+'px';ctx.setTransform(dpr,0,0,dpr,0,0);points=Array.from({length:w<700?90:180},(_,i)=>{const a=Math.random()*Math.PI*2,b=Math.acos(2*Math.random()-1),r=130+Math.random()*80;return{x:r*Math.sin(b)*Math.cos(a),y:r*Math.cos(b),z:r*Math.sin(b)*Math.sin(a),s:.7+Math.random()*1.7}})}resize();addEventListener('resize',resize,{passive:true});let t=0;function draw(){ctx.clearRect(0,0,w,h);t+=.0035;const cx=w*.74,cy=h*.28;for(const p of points){const x=p.x*Math.cos(t)-p.z*Math.sin(t),z=p.x*Math.sin(t)+p.z*Math.cos(t),scale=420/(420+z),sx=cx+x*scale,sy=cy+p.y*scale,alpha=Math.max(.08,Math.min(.75,(scale-.55)));ctx.beginPath();ctx.arc(sx,sy,p.s*scale,0,Math.PI*2);ctx.fillStyle=`rgba(164,143,255,${alpha})`;ctx.fill()}requestAnimationFrame(draw)}draw();document.getElementById('year').textContent=new Date().getFullYear();const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.animate([{opacity:0,transform:'translateY(28px)'},{opacity:1,transform:'translateY(0)'}],{duration:650,fill:'both',easing:'cubic-bezier(.2,.7,.2,1)'})}),{threshold:.14});document.querySelectorAll('.section>* , .hero>*').forEach(el=>observer.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const revealObserver=new IntersectionObserver((entries)=>{
+  entries.forEach((entry)=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:.12});
+
+document.querySelectorAll('.reveal').forEach((el)=>revealObserver.observe(el));
+
+const filters=document.querySelectorAll('.filter');
+const projects=document.querySelectorAll('.project-card');
+filters.forEach((button)=>{
+  button.addEventListener('click',()=>{
+    filters.forEach((item)=>item.classList.remove('active'));
+    button.classList.add('active');
+    const filter=button.dataset.filter;
+    projects.forEach((project)=>{
+      const show=filter==='all'||project.dataset.category===filter;
+      project.classList.toggle('hidden',!show);
+    });
+  });
+});
+
+const glow=document.querySelector('.cursor-glow');
+if(glow&&matchMedia('(pointer:fine)').matches){
+  addEventListener('pointermove',(event)=>{
+    glow.style.left=`${event.clientX}px`;
+    glow.style.top=`${event.clientY}px`;
+  },{passive:true});
+}
+
+const tilt=document.querySelector('.tilt-card');
+if(tilt&&matchMedia('(pointer:fine)').matches&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  tilt.addEventListener('pointermove',(event)=>{
+    const rect=tilt.getBoundingClientRect();
+    const x=(event.clientX-rect.left)/rect.width-.5;
+    const y=(event.clientY-rect.top)/rect.height-.5;
+    tilt.style.transform=`rotateY(${x*10}deg) rotateX(${y*-10}deg) translateY(-3px)`;
+  });
+  tilt.addEventListener('pointerleave',()=>{tilt.style.transform='';});
+}
