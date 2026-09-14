@@ -1,1 +1,186 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://avatars.githubusercontent.com data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"><meta name="description" content="Ayush Kapure — 3D developer portfolio featuring Android and CNG projects."><title>Ayush Kapure — 3D Portfolio</title><link rel="stylesheet" href="style.css"></head><body><canvas id="space" aria-hidden="true"></canvas><header><a class="brand" href="#home">AYUSH<span>.</span></a><nav><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav><a class="github" href="https://github.com/ayushkapure26" target="_blank" rel="noopener noreferrer">GitHub ↗</a></header><main><section id="home" class="hero"><div class="hero-copy"><p class="eyebrow">FINAL-YEAR COMPUTER ENGINEERING • INDIA</p><h1>BUILDING<br><span>USEFUL</span><br>EXPERIENCES.</h1><p class="lead">Android developer focused on practical products, clean interfaces and real-world problems.</p><div class="actions"><a class="btn primary" href="#work">Explore projects ↗</a><a class="btn" href="mailto:ayushkapure26@gmail.com">Contact me</a></div></div><div class="scene-card"><div class="orb-wrap"><div class="orb-label top">ANDROID</div><div class="orb-label right">CNG</div><div class="orb-label bottom">BUILD</div><div class="glass-card"><img src="https://avatars.githubusercontent.com/u/113749854?v=4" alt="Ayush Kapure"><div><b>Ayush Kapure</b><span>Developer / Student</span></div></div></div></div></section><section id="about" class="section"><p class="section-no">01 / ABOUT</p><div class="two-col"><h2>I turn <span>everyday problems</span> into practical software.</h2><div class="copy"><p>I’m Ayush Kapure, a final-year Computer Engineering student learning through hands-on development.</p><p>My work is centered on Android, CNG utility ideas, web interfaces, debugging and project delivery.</p><div class="stats"><div><b>B.Tech</b><span>Computer Engineering</span></div><div><b>Android</b><span>Primary focus</span></div><div><b>2026</b><span>Final year</span></div></div></div></div></section><section id="work" class="section"><p class="section-no">02 / SELECTED WORK</p><div class="projects"><article><div class="num">01</div><div><p class="type">ANDROID • FUEL UTILITY</p><h3>CNG मित्र</h3><p>A fuel diary for CNG drivers with refill records, mileage, expenses, offline Guest Mode and CSV import/export.</p><div class="tags"><span>Kotlin</span><span>Jetpack Compose</span><span>Room</span><span>Coroutines</span></div><a href="https://github.com/ayushkapure26/Ayush_prmm" target="_blank" rel="noopener noreferrer">View project ↗</a></div><div class="project-art sphere"></div></article><article><div class="num">02</div><div><p class="type">WEB • CNG BOOKING</p><h3>CNG Booking Website</h3><p>A practical web project for simplifying CNG booking workflows with an easy-to-use interface.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="https://github.com/ayushkapure26/ayushkapure80" target="_blank" rel="noopener noreferrer">View project ↗</a></div><div class="project-art cube"><i></i><i></i><i></i></div></article></div></section><section id="skills" class="section"><p class="section-no">03 / TOOLKIT</p><h2 class="wide-title">TOOLS I USE TO <span>BUILD.</span></h2><div class="skills"><div><b>Android</b><p>Kotlin · Jetpack Compose · Room · Coroutines</p></div><div><b>Programming</b><p>Java · Python · C · C++ · JavaScript</p></div><div><b>Platforms</b><p>Git · GitHub Actions · Firebase · Google Maps · Gemini</p></div></div></section><section id="contact" class="section contact"><p class="section-no">04 / CONTACT</p><h2>LET’S <span>BUILD</span><br>SOMETHING.</h2><div class="contact-links"><a href="mailto:ayushkapure26@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/ayush-kapure-19152a281/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/ayushkapure26" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></section></main><footer><span>© <span id="year"></span> AYUSH KAPURE</span><span>ORIGINAL 3D-INSPIRED IMPLEMENTATION</span></footer><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://avatars.githubusercontent.com data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="description" content="Ayush Kapure — Computer Engineering student and developer building practical Android and web products.">
+  <meta name="theme-color" content="#07080d">
+  <title>Ayush Kapure — Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ayush Kapure home">AK<span>°</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="https://github.com/ayushkapure26" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="kicker"><span></span> Available for opportunities</p>
+        <h1>AYUSH<br><em>KAPURE</em></h1>
+        <p class="hero-role">Computer Engineering student / Android & web developer</p>
+        <p class="hero-intro">I build useful digital products around real-world problems — with a focus on clean interfaces, practical workflows and dependable engineering.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View selected work <span>↘</span></a>
+          <a class="button" href="mailto:ayushkapure26@gmail.com">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Ayush Kapure profile">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card tilt-card">
+          <div class="profile-topline"><span>PORTFOLIO / 2026</span><span>INDIA</span></div>
+          <img src="https://avatars.githubusercontent.com/u/113749854?v=4" alt="Ayush Kapure">
+          <div class="profile-meta">
+            <div><strong>Ayush Kapure</strong><span>Developer • Student</span></div>
+            <span class="status-dot" title="Open to opportunities"></span>
+          </div>
+        </div>
+        <span class="floating-chip chip-one">ANDROID</span>
+        <span class="floating-chip chip-two">WEB</span>
+        <span class="floating-chip chip-three">BUILD • LEARN • SHIP</span>
+      </div>
+    </section>
+
+    <section id="about" class="section shell">
+      <div class="section-heading reveal">
+        <p>01 / ABOUT</p>
+        <h2>Turning everyday problems into <em>practical software.</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>I’m a final-year B.Tech Computer Engineering student who learns by building. I enjoy taking an idea from rough concept to a working product, then refining the experience until it feels simple and useful.</p>
+          <p>My current work spans Android apps, CNG utility products, web interfaces, debugging, Git/GitHub workflows and AI-assisted development.</p>
+        </div>
+        <div class="facts reveal">
+          <article><span>01</span><strong>B.Tech</strong><p>Computer Engineering</p></article>
+          <article><span>02</span><strong>Android</strong><p>Primary product focus</p></article>
+          <article><span>03</span><strong>2026</strong><p>Final-year student</p></article>
+          <article><span>04</span><strong>GitHub</strong><p>Building in public</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section shell">
+      <div class="section-heading work-heading reveal">
+        <div>
+          <p>02 / SELECTED WORK</p>
+          <h2>Projects built to be <em>used.</em></h2>
+        </div>
+        <div class="filters" aria-label="Project filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="android">Android</button>
+          <button class="filter" data-filter="web">Web</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal" data-category="android">
+          <div class="project-preview preview-cng">
+            <span class="preview-label">01 / FEATURED</span>
+            <div class="phone-mock">
+              <div class="phone-screen">
+                <small>CNG मित्र</small>
+                <strong>Drive smarter.</strong>
+                <div class="metric-row"><span>Refills</span><b>24</b></div>
+                <div class="metric-row"><span>Mileage</span><b>28.4</b></div>
+                <div class="metric-row"><span>Expense</span><b>₹4.8K</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <p class="project-type">ANDROID • CNG UTILITY</p>
+            <h3>CNG मित्र</h3>
+            <p>A practical companion for CNG drivers focused on refill records, mileage, expenses and everyday vehicle-use workflows.</p>
+            <div class="tag-row"><span>Android</span><span>Kotlin</span><span>Product Design</span></div>
+            <a href="https://github.com/ayushkapure26/My-cng" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-preview preview-booking">
+            <span class="preview-label">02 / WEB</span>
+            <div class="browser-mock">
+              <div class="browser-bar"><i></i><i></i><i></i></div>
+              <div class="browser-body"><span>BOOK</span><strong>CNG</strong><p>Simple booking workflow</p></div>
+            </div>
+          </div>
+          <div class="project-content">
+            <p class="project-type">WEB • BOOKING</p>
+            <h3>CNG Booking</h3>
+            <p>A lightweight web project designed to simplify a CNG booking flow with a clear, accessible interface.</p>
+            <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://github.com/ayushkapure26/ayushkapure80" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="android">
+          <div class="project-preview preview-refill">
+            <span class="preview-label">03 / MOBILE</span>
+            <div class="ring-art"><span>REFILL</span></div>
+          </div>
+          <div class="project-content">
+            <p class="project-type">ANDROID • TRACKER</p>
+            <h3>Refill Manager</h3>
+            <p>A focused refill-tracking concept for organizing fuel records and improving day-to-day expense visibility.</p>
+            <div class="tag-row"><span>Android</span><span>Data</span><span>UX</span></div>
+            <span class="private-note">Private development repository</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section shell">
+      <div class="section-heading reveal">
+        <p>03 / TOOLKIT</p>
+        <h2>Tools I use to <em>build & ship.</em></h2>
+      </div>
+      <div class="skills-marquee reveal" aria-label="Skills">
+        <div class="marquee-track">
+          <span>ANDROID</span><i>✦</i><span>KOTLIN</span><i>✦</i><span>JAVA</span><i>✦</i><span>PYTHON</span><i>✦</i><span>HTML</span><i>✦</i><span>CSS</span><i>✦</i><span>JAVASCRIPT</span><i>✦</i><span>GIT</span><i>✦</i><span>GITHUB</span><i>✦</i>
+        </div>
+      </div>
+      <div class="skill-grid">
+        <article class="reveal"><span>Development</span><h3>Android & Programming</h3><p>Kotlin, Java, Python, C/C++, JavaScript and practical application development.</p></article>
+        <article class="reveal"><span>Interface</span><h3>Web & UI</h3><p>Responsive HTML/CSS interfaces, interaction design and clean user flows.</p></article>
+        <article class="reveal"><span>Workflow</span><h3>Build & Iterate</h3><p>Git, GitHub, debugging, AI-assisted development and continuous project refinement.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact shell">
+      <div class="contact-copy reveal">
+        <p>04 / CONTACT</p>
+        <h2>Have an idea?<br><em>Let’s build it.</em></h2>
+      </div>
+      <div class="contact-panel reveal">
+        <p>I’m open to internships, student collaborations and developer opportunities.</p>
+        <a class="contact-email" href="mailto:ayushkapure26@gmail.com">ayushkapure26@gmail.com ↗</a>
+        <div class="social-row">
+          <a href="https://github.com/ayushkapure26" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/ayush-kapure-19152a281/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <span>© <span id="year"></span> AYUSH KAPURE</span>
+    <span>DESIGNED & BUILT WITH CURIOSITY</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
